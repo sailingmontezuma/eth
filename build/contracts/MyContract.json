@@ -1,20 +1,41 @@
 {
   "contractName": "MyContract",
-  "abi": [],
-  "bytecode": "0x60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a7230582007bf579c3c032379361f3be6c82b31160f25be1a796eac0148eebed3d1ed25a10029",
-  "deployedBytecode": "0x6060604052600080fd00a165627a7a7230582007bf579c3c032379361f3be6c82b31160f25be1a796eac0148eebed3d1ed25a10029",
-  "sourceMap": "27:30:0:-;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "27:30:0:-;;;;;",
-  "source": "pragma solidity ^0.4.0;\r\n\r\ncontract MyContract {\r\n    \r\n}",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "price",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x60606040523415600e57600080fd5b64170cdc1e00600081905550609c806100286000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063a035b1fe146044575b600080fd5b3415604e57600080fd5b6054606a565b6040518082815260200191505060405180910390f35b600054815600a165627a7a72305820906476f3eba163a7c43779c1a58ad2d69de1c3c29de6e3ab16d30b0f56a3089d0029",
+  "deployedBytecode": "0x606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063a035b1fe146044575b600080fd5b3415604e57600080fd5b6054606a565b6040518082815260200191505060405180910390f35b600054815600a165627a7a72305820906476f3eba163a7c43779c1a58ad2d69de1c3c29de6e3ab16d30b0f56a3089d0029",
+  "sourceMap": "27:126:0:-;;;81:69;;;;;;;;129:11;121:5;:19;;;;27:126;;;;;;",
+  "deployedSourceMap": "27:126:0:-;;;;;;;;;;;;;;;;;;;;;;;;54:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.0;\r\n\r\ncontract MyContract {\r\n    uint256 public price;\r\n    function MyContract() public {\r\n        price = 99000000000;\r\n\r\n    }\r\n}",
   "sourcePath": "C:\\git\\eth\\contracts\\MyContract.sol",
   "ast": {
     "absolutePath": "/C/git/eth/contracts/MyContract.sol",
     "exportedSymbols": {
       "MyContract": [
-        2
+        12
       ]
     },
-    "id": 3,
+    "id": 13,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -34,27 +55,139 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 2,
+        "id": 12,
         "linearizedBaseContracts": [
-          2
+          12
         ],
         "name": "MyContract",
         "nodeType": "ContractDefinition",
-        "nodes": [],
-        "scope": 3,
-        "src": "27:30:0"
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3,
+            "name": "price",
+            "nodeType": "VariableDeclaration",
+            "scope": 12,
+            "src": "54:20:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "54:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10,
+              "nodeType": "Block",
+              "src": "110:40:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 8,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 6,
+                      "name": "price",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3,
+                      "src": "121:5:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "3939303030303030303030",
+                      "id": 7,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "129:11:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_99000000000_by_1",
+                        "typeString": "int_const 99000000000"
+                      },
+                      "value": "99000000000"
+                    },
+                    "src": "121:19:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 9,
+                  "nodeType": "ExpressionStatement",
+                  "src": "121:19:0"
+                }
+              ]
+            },
+            "id": 11,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "MyContract",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "100:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 5,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "110:0:0"
+            },
+            "scope": 12,
+            "src": "81:69:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 13,
+        "src": "27:126:0"
       }
     ],
-    "src": "0:57:0"
+    "src": "0:153:0"
   },
   "legacyAST": {
     "absolutePath": "/C/git/eth/contracts/MyContract.sol",
     "exportedSymbols": {
       "MyContract": [
-        2
+        12
       ]
     },
-    "id": 3,
+    "id": 13,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -74,18 +207,130 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 2,
+        "id": 12,
         "linearizedBaseContracts": [
-          2
+          12
         ],
         "name": "MyContract",
         "nodeType": "ContractDefinition",
-        "nodes": [],
-        "scope": 3,
-        "src": "27:30:0"
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3,
+            "name": "price",
+            "nodeType": "VariableDeclaration",
+            "scope": 12,
+            "src": "54:20:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "54:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10,
+              "nodeType": "Block",
+              "src": "110:40:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 8,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 6,
+                      "name": "price",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3,
+                      "src": "121:5:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "3939303030303030303030",
+                      "id": 7,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "129:11:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_99000000000_by_1",
+                        "typeString": "int_const 99000000000"
+                      },
+                      "value": "99000000000"
+                    },
+                    "src": "121:19:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 9,
+                  "nodeType": "ExpressionStatement",
+                  "src": "121:19:0"
+                }
+              ]
+            },
+            "id": 11,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "MyContract",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "100:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 5,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "110:0:0"
+            },
+            "scope": 12,
+            "src": "81:69:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 13,
+        "src": "27:126:0"
       }
     ],
-    "src": "0:57:0"
+    "src": "0:153:0"
   },
   "compiler": {
     "name": "solc",
@@ -93,5 +338,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-03-10T17:32:35.379Z"
+  "updatedAt": "2018-03-10T21:14:47.450Z"
 }
