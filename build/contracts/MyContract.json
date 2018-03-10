@@ -1,0 +1,97 @@
+{
+  "contractName": "MyContract",
+  "abi": [],
+  "bytecode": "0x60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a7230582007bf579c3c032379361f3be6c82b31160f25be1a796eac0148eebed3d1ed25a10029",
+  "deployedBytecode": "0x6060604052600080fd00a165627a7a7230582007bf579c3c032379361f3be6c82b31160f25be1a796eac0148eebed3d1ed25a10029",
+  "sourceMap": "27:30:0:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "27:30:0:-;;;;;",
+  "source": "pragma solidity ^0.4.0;\r\n\r\ncontract MyContract {\r\n    \r\n}",
+  "sourcePath": "C:\\git\\eth\\contracts\\MyContract.sol",
+  "ast": {
+    "absolutePath": "/C/git/eth/contracts/MyContract.sol",
+    "exportedSymbols": {
+      "MyContract": [
+        2
+      ]
+    },
+    "id": 3,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2,
+        "linearizedBaseContracts": [
+          2
+        ],
+        "name": "MyContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 3,
+        "src": "27:30:0"
+      }
+    ],
+    "src": "0:57:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/git/eth/contracts/MyContract.sol",
+    "exportedSymbols": {
+      "MyContract": [
+        2
+      ]
+    },
+    "id": 3,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2,
+        "linearizedBaseContracts": [
+          2
+        ],
+        "name": "MyContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 3,
+        "src": "27:30:0"
+      }
+    ],
+    "src": "0:57:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.19+commit.c4cbbb05.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-03-10T17:32:35.379Z"
+}
