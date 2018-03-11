@@ -19,11 +19,11 @@ contract Bank is Regulator {
     function balance() public returns (uint) {
         return value;
     }
-    function loan() public returns (bool){
+    function loan() returns (bool){
         return value > 0;
     }
     function checkValue(uint amount) public returns (bool){
-        return amount >= value;
+        return amount <= value;
     }
 }
 contract coreContract is Bank {
