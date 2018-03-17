@@ -30,6 +30,7 @@ truffle unbox pet-shop
 truffle unbox metacoin
 
 6.
+run ganache
 truffle migrate
 
 7. 
