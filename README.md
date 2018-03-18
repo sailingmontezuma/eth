@@ -36,6 +36,11 @@ truffle migrate --reset
 
 7. 
 truffle console
+
+
+
+
+Election Contract:
 truffle console commands:
 Election.deployed().then(function(instance){app=instance})
 var app2 = Election.deployed()
@@ -43,3 +48,4 @@ var app2 = Election.deployed()
 app.address
 app.candidate()
 app.candidates(3)
+app.candidatesCount()
