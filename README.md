@@ -30,11 +30,16 @@ truffle unbox pet-shop
 truffle unbox metacoin
 
 6.
-run ganache
+run ganache application
 truffle migrate
+truffle migrate --reset
 
 7. 
 truffle console
+truffle console commands:
+Election.deployed().then(function(instance){app=instance})
+var app2 = Election.deployed()
 
-
-
+app.address
+app.candidate()
+app.candidates(3)
