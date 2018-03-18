@@ -39,7 +39,7 @@ truffle migrate --reset
 7. 
 truffle console
 
-
+truffle test
 
 
 
