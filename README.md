@@ -46,11 +46,16 @@ Solidity compiler.
 npm install -g solc
 solcjs --version
 solcjs --help
+solcjs
+solcjs ./contracts/Election.sol --bin
 
 testrpc is a Node.js based Ethereum client for testing and development.
-It uses ethereumjs to simulate full client behavior 
+It uses ethereumjs to simulate full client behavior, ethereum testnet client
 run blockchain in memory
 npm install -g ethereumjs-testrpc
+testrpc
+
+
 
 
 
