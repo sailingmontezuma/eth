@@ -42,6 +42,8 @@ truffle console
 
 
 
+
+
 Solidity compiler.
 npm install -g solc
 solcjs --version
