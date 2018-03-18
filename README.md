@@ -40,6 +40,14 @@ truffle console
 
 
 
+Solidity compiler.
+npm install -g solc
+solcjs --version
+solcjs --help
+
+Truffle console commands:
+web3.eth.accounts
+
 Election Contract:
 truffle console commands:
 Election.deployed().then(function(instance){app=instance})
@@ -53,3 +61,7 @@ app.address
 app.candidate()
 app.candidates(3)
 app.candidatesCount()
+candidate[0].toNumber()
+
+
+

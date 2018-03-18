@@ -13,11 +13,11 @@ contract Election {
 
     function Election() public {
             //candidate = "Candidate 1";
-            addCandidate("Agnieszka");
-            addCandidate("Pawel");
-            addCandidate("Jakub");
-            addCandidate("Dominika");
-            addCandidate("mama");
+            addCandidate("Olo");
+            addCandidate("Bolo");
+            addCandidate("Colo");
+            addCandidate("Mini");
+            addCandidate("Fama");
     }
 
     function addCandidate(string _name) private {
