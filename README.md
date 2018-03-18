@@ -43,6 +43,10 @@ truffle console
 Election Contract:
 truffle console commands:
 Election.deployed().then(function(instance){app=instance})
+app.candidates(1).then(function(c){candidate=c;})
+candidate[0]
+candidate[1]
+candidate[2]
 var app2 = Election.deployed()
 
 app.address
