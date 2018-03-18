@@ -15,6 +15,8 @@ dev environment:
 npm install -g truffle
 npm install -g ganache-cli
 
+ganache-cli@6.1.0
+
 2.
 truffle init
 truffle unbox pet-shop
@@ -44,6 +46,13 @@ Solidity compiler.
 npm install -g solc
 solcjs --version
 solcjs --help
+
+testrpc is a Node.js based Ethereum client for testing and development.
+It uses ethereumjs to simulate full client behavior 
+run blockchain in memory
+npm install -g ethereumjs-testrpc
+
+
 
 Truffle console commands:
 web3.eth.accounts
