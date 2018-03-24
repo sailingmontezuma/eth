@@ -1,7 +1,6 @@
 pragma solidity 0.4.18;
 
-import "Regulator.sol";
-
+import "./Regulator.sol";
 contract Bank is Regulator {
     uint private value;
     address private owner;
